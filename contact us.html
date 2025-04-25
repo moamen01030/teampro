@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Title that appears in the browser tab -->
+    <title>Contact Page</title>
+
+    <!-- Embedded CSS styling block -->
+    <style>
+        /* General styles for the entire page */
+        body {
+            background-color: rgba(86, 2, 58, 0.645); /* Dark purple background */
+            color: white; /* White text for contrast */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Smooth, modern fonts */
+            margin: 0; /* Remove default body margin */
+            padding: 20px; /* Add spacing around the content */
+        }
+
+        /* Main heading styles */
+        h1 {
+            text-align: center; /* Center the text horizontally */
+            margin-bottom: 40px; /* Add spacing below the heading */
+        }
+
+        /* Container for each contact person's info */
+        .contact-section {
+            background-color: rgba(255, 255, 255, 0.1); /* Light, transparent background box */
+            padding: 20px; /* Inner spacing inside the box */
+            border-radius: 10px; /* Rounded corners for the box */
+            margin-bottom: 30px; /* Space between different contact sections */
+        }
+
+        /* Remove top margin for section headings (engineer names) */
+        .contact-section h2 {
+            margin-top: 0;
+        }
+
+        /* Margin between lines of contact info */
+        .info {
+            margin: 10px 0;
+        }
+
+        /* Button styling for Facebook and Email links */
+        a.button {
+            display: inline-block; /* Allows padding and margin */
+            padding: 10px 15px; /* Space inside the button */
+            background-color: #ffffff33; /* Semi-transparent white */
+            color: white; /* Button text color */
+            text-decoration: none; /* Remove underline */
+            border: 1px solid white; /* White border */
+            border-radius: 5px; /* Rounded button corners */
+            transition: background-color 0.3s; /* Smooth hover effect */
+        }
+
+        /* Hover effect: lightens the button background */
+        a.button:hover {
+            background-color: #ffffff66;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Page headline -->
+    <h1>THIS WEBSITE IS FOR COMPANY INFORMATION<br>DON'T HESITATE TO CONTACT US</h1>
+
+    <!-- Contact info for Engineer 1 -->
+    <div class="contact-section">
+        <h2>Engineer: Moamen Mohamed Mahmoud</h2>
+        <p class="info">Role: Software Engineer</p>
+        <p class="info">Phone: +20 1030398367</p>
+        <a class="button" href="https://www.facebook.com/profile.php?id=61556980751933" target="_blank">Facebook</a>
+        <a class="button" href="mailto:mamenkhattab@gmail.com">Send Email</a>
+    </div>
+
+    <!-- Contact info for Engineer 2 -->
+    <div class="contact-section">
+        <h2>Engineer: Mostafa Refae</h2>
+        <p class="info">Role: Electrical Engineer</p>
+        <p class="info">Phone: +20 1222434940</p>
+        <a class="button" href="https://facebook.com/ahmedyoussef" target="_blank">Facebook</a>
+        <a class="button" href="mailto:ahmed@example.com">Send Email</a>
+    </div>
+
+    <!-- Contact info for Engineer 3 -->
+    <div class="contact-section">
+        <h2>Engineer: Mikhail Elia</h2>
+        <p class="info">Role: Mechatronics Engineer</p>
+        <p class="info">Phone: +20 1272466027</p>
+        <a class="button" href="https://facebook.com/saratarek" target="_blank">Facebook</a>
+        <a class="button" href="mailto:sara@example.com">Send Email</a>
+    </div>
+
+</body>
+</html>
