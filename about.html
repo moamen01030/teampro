@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Page Title -->
+    <title>Valvo</title>
+
+    <!-- Internal CSS Styling -->
+    <style>
+        /* General page styles */
+        body {
+            background-color: rgb(13, 26, 49); /* Dark blue background */
+            margin: 0; /* Remove default margin */
+            font-family: Arial; /* Font style */
+            color: white; /* Text color */
+            min-height: 100vh; /* Make sure body fills at least the viewport height */
+            position: relative; /* For positioning the footer absolutely */
+        }
+
+        /* Main heading styling */
+        h1 {
+            font-size: 30px; /* Heading font size */
+            color: rgb(16, 146, 55); /* Green color for headline */
+            direction: rtl; /* Right-to-left text direction (Arabic) */
+            padding: 20px; /* Inner spacing around heading */
+        }
+
+        /* Container for links */
+        .links {
+            padding: 10px 20px; /* Spacing inside the box */
+            text-align: center; /* Center align the links */
+        }
+
+        /* Styling each link */
+        .links a {
+            color: white; /* White text for links */
+            margin: 0 10px; /* Horizontal space between links */
+            text-decoration: none; /* Remove underline */
+        }
+
+        /* Footer container */
+        .footer {
+            position: absolute; /* Positioned at the bottom */
+            bottom: 0; /* Stick to bottom */
+            width: 100%; /* Full width */
+            text-align: center; /* Centered text and elements */
+            padding-bottom: 20px; /* Space at bottom of footer */
+        }
+
+        /* Text inside footer */
+        .footer-text {
+            font-size: 20px; /* Slightly larger text */
+            margin-bottom: 10px; /* Space below the text */
+        }
+
+        /* Flex container for images */
+        .images {
+            display: flex; /* Arrange children in a row */
+            justify-content: center; /* Center all images horizontally */
+            gap: 15px; /* Space between images */
+        }
+
+        /* Image thumbnails */
+        .images img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%; /* Make images circular */
+        }
+
+        /* Enlarged image preview (hidden by default) */
+        .preview {
+            display: none; /* Hidden initially */
+            position: fixed; /* Fixed on screen */
+            top: 60px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%; /* Circular popup */
+            background-color: white; /* White background */
+            padding: 10px; /* Inner spacing */
+            text-align: center; /* Center image and close link */
+            z-index: 10; /* Ensure it's on top of other content */
+        }
+
+        /* Image inside popup */
+        .preview img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%; /* Keep popup image circular */
+        }
+
+        /* When a preview is targeted (clicked), show it */
+        .preview:target {
+            display: block;
+        }
+
+        /* Close (X) button inside popup */
+        .close {
+            display: block;
+            color: red; /* Red X for visibility */
+            margin-top: 5px;
+            text-decoration: none; /* No underline */
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Arabic heading/description with RTL direction -->
+    <h1 dir="rtl">
+        في شركة Valvo 💧 بنشتغل كل يوم على هدف واحد: نوفّر أفضل حلول للتحكم في تدفق المياه، بجودة عالية وكفاءة مضمونة. من أكتر من 60 سنة، بدأنا مشوارنا بإمكانات بسيطة، لكن بحلم كبير وطموح ما بيوقفش 🚀. والنهارده، قدرنا نثبت وجودنا في السوق المحلي والدولي كمصدر ثقة للعملاء والموزعين في مجالات مختلفة زي البنية التحتية، الصناعة، والمشاريع الحكومية 🏗️🏭.
+
+        منتجاتنا مش مجرد قطع معدنية أو صمامات 🛠️، دي نتيجة تعب سنين من البحث، التطوير، والتجربة، علشان نوصل لأفضل تصميم يجمع بين الدقة، الأمان، وطول العمر. كل منتج بيخرج من مصانعنا، وراه مهندسين وفنيين بيهتموا بأدق التفاصيل، لأننا بنؤمن إن "الجودة مش خيار... دي أسلوب حياة" 🧠💪.
+        
+        إحنا مش بنصنع منتج ونبيعه وبس، إحنا بنشارك في بناء مستقبل آمن ومستدام للمياه 💦.
+        وعشان كده بنقولها بكل فخر واعتزاز:
+        هذه منتجاتنا، ونحن فخورون بها 💚 لأن كل قطعة بتمثّلنا، وتحكي حكايتنا.
+        <!-- Your full paragraph is preserved here -->
+    </h1>
+
+    <!-- Section for navigation links to preview images -->
+    <div class="links">
+        <a href="#img1">img1</a>
+        <a href="#img2">img2</a>
+        <a href="#img3">img3</a>
+        <a href="#img4">img4</a>
+    </div>
+
+    <!-- Footer with slogan and image thumbnails -->
+    <div class="footer">
+
+        <!-- Footer text message -->
+        <div class="footer-text">هذه منتجاتنا ونحن فخورون بها 💚</div>
+        
+        <!-- Image preview thumbnails -->
+        <div class="images">
+            <a href="#img1"><img src="img1.jpg" alt="img1"></a>
+            <a href="#img2"><img src="img2.jpg" alt="img2"></a>
+            <a href="#img3"><img src="img3.jpg" alt="img3"></a>
+            <a href="#img4"><img src="img4.jpg" alt="img4"></a>
+        </div>
+    </div>
+
+    <!-- Enlarged preview section for each image -->
+    <div id="img1" class="preview">
+        <img src="img1.jpg" alt="img1">
+        <a href="#" class="close">X</a> <!-- Closes the popup -->
+    </div>
+
+    <div id="img2" class="preview">
+        <img src="img2.jpg" alt="img2">
+        <a href="#" class="close">X</a>
+    </div>
+
+    <div id="img3" class="preview">
+        <img src="img3.jpg" alt="img3">
+        <a href="#" class="close">X</a>
+    </div>
+
+    <div id="img4" class="preview">
+        <img src="img4.jpg" alt="img4">
+        <a href="#" class="close">X</a>
+    </div>
+
+</body>
+</html>
